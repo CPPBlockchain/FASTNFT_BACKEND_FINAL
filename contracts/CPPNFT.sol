@@ -59,7 +59,7 @@ contract CPPNFT is ERC721URIStorage {
         "z"
     ];
 
-    uint256 public constant maxSupply = 777;
+    uint256 public constant maxSupply = 3;
 
     constructor() ERC721("FASTBLOCKCHAIN", "CPPFAST") {
         console.log("An NFT has been minted to", msg.sender);
@@ -100,7 +100,7 @@ contract CPPNFT is ERC721URIStorage {
     function makeAnEpicNFT() public {
         uint256 newItemId = _tokenIds.current();
 
-        require(newItemId < maxSupply);
+        require(newItemId < maxSupply, "You have reached the limit");
 
         string memory finalSvg = string(
             abi.encodePacked(partOne, randomBackgroundColor(newItemId), partTwo)
