@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// By Byung, Chris, Andy From CPP FAST Blockchain Team
+// By Byung, Christopher, Andy From CPP FAST Blockchain Team
 pragma solidity ^0.8.4;
 
 import "@openzeppelin/contracts/utils/Strings.sol";
