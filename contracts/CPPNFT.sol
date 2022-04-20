@@ -59,7 +59,7 @@ contract CPPNFT is ERC721URIStorage {
         "z"
     ];
 
-    uint256 public constant maxSupply = 3;
+    uint256 public constant maxSupply = 100;
 
     constructor() ERC721("FASTBLOCKCHAIN", "CPPFAST") {
         console.log("An NFT has been minted to", msg.sender);
